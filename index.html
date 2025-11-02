@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Nguyễn Lương Kiến Văn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #2b5876, #4e4376, #1f2f98);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .cv-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 950px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* LEFT SIDE */
+    .left {
+      flex: 1 1 300px;
+      background: linear-gradient(180deg, #4e4376, #2b5876);
+      color: #fff;
+      padding: 30px 25px;
+      text-align: center;
+    }
+
+    .left img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid rgba(255,255,255,0.8);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+      margin-bottom: 15px;
+      transition: transform 1s ease, box-shadow 0.5s ease;
+    }
+
+    .left img:hover {
+      transform: rotate(360deg) scale(1.05);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+
+    /* TÊN VÀ VỊ TRÍ */
+    .profile-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffd166;
+      margin-bottom: 5px;
+    }
+
+    .profile-position {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .left h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      padding-bottom: 5px;
+    }
+
+    .left p, .left li {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .skills-list li::before {
+      content: "✔ ";
+      color: #ffd166;
+      font-weight: bold;
+    }
+
+    .right {
+      flex: 2 1 550px;
+      padding: 40px;
+      color: #333;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2b5876;
+      border-bottom: 2px solid #4e4376;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .content p {
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .job {
+      margin-bottom: 25px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #4e4376;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .job:hover {
+      transform: translateX(5px);
+    }
+
+    .job h4 {
+      font-size: 15px;
+      color: #2b5876;
+      margin-bottom: 4px;
+    }
+
+    .job ul li {
+      font-size: 14px;
+      line-height: 1.8;
+      list-style: disc;
+      margin-left: 18px;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #ffd166;
+    }
+
+    a {
+      color: #ffd166;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 992px) {
+      .cv-container {
+        flex-direction: column;
+      }
+      .left, .right {
+        width: 100%;
+        padding: 25px;
+      }
+      .left img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .left img {
+        width: 120px;
+        height: 120px;
+      }
+      .profile-name {
+        font-size: 18px;
+      }
+      .profile-position {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="left">
+      <img src="./gen-t-z7163803287190_b6ffb8feac9f12779c8c76550c74f838.jpg" alt="Nguyễn Lương Kiến Văn">
+
+      <!-- Thêm tên và vị trí dưới ảnh -->
+      <div class="profile-name">Nguyễn Lương Kiến Văn</div>
+      <div class="profile-position">Lập Trình Viên Web</div>
+
+      <div class="section">
+        <h3><i class="fa-solid fa-address-book icon"></i>Liên lạc</h3>
+        <p><strong><i class="fa-solid fa-phone icon"></i>Điện thoại:</strong><br>+84 819 837 274</p>
+        <p><strong><i class="fa-solid fa-envelope icon"></i>Email:</strong><br>accclonecuavan@gmail.com</p>
+        <p><strong><i class="fa-solid fa-cake-candles icon"></i>Ngày sinh:</strong><br>20/09/2005</p>
+        <p><strong><i class="fa-solid fa-location-dot icon"></i>Địa chỉ:</strong><br>233 Y Wang, Ea Kao, Đắk Lắk</p>
+      </div>
+
+      <div class="section">
+        <h3><i class="fa-solid fa-laptop-code icon"></i>Kỹ năng</h3>
+        <ul class="skills-list">
+          <li>HTML, CSS, JavaScript cơ bản</li>
+          <li>Làm việc nhóm, giao tiếp tốt</li>
+          <li>Tư duy logic, giải quyết vấn đề</li>
+          <li>Học nhanh, thích nghi tốt</li>
+          <li>Hiểu biết cơ bản về SQL, Git, VS Code</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3><i class="fa-solid fa-folder-open icon"></i>Dự án</h3>
+        <a href="#" target="_blank">🌐 Website bán hàng</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="section">
+        <div class="title"><i class="fa-solid fa-bullseye icon"></i>Mục tiêu nghề nghiệp</div>
+        <div class="content">
+          <p>Tôi mong muốn trở thành một lập trình viên web chuyên nghiệp, có khả năng phát triển giao diện và tối ưu trải nghiệm người dùng. 
+          Ngắn hạn, tôi muốn học hỏi thêm kỹ năng và làm việc trong môi trường năng động. 
+          Dài hạn, tôi hướng đến vai trò full-stack developer hoặc UI/UX designer.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title"><i class="fa-solid fa-briefcase icon"></i>Kinh nghiệm làm việc</div>
+
+        <div class="job">
+          <ul>
+            <li>Thiết kế giao diện website bán hàng bằng HTML, CSS, JavaScript.</li>
+            <li>Tối ưu hiển thị tốt trên máy tính và điện thoại.</li>
+            <li>Tự học thêm về lưu trữ dữ liệu LocalStorage.</li>
+            <li>Triển khai dự án qua GitHub Pages.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h4>🏢 Daksystem <span style="font-weight: normal;">(11/2025 - 01/2026)</span></h4>
+          <p><strong>💻 Vị trí:</strong> Lập trình viên Web</p>
+          <ul>
+            <li>🔍 Phân tích thị trường và nhu cầu khách hàng.</li>
+            <li>📊 Đề xuất giải pháp kinh doanh hiệu quả.</li>
+            <li>🚀 Áp dụng marketing số và tối ưu giao diện web.</li>
+            <li>🤝 Phối hợp nhóm thiết kế để hoàn thiện sản phẩm.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
